@@ -28,7 +28,7 @@ jobs:
               actions/upload-artifact@v3
         with:
           name: my-artifact
-          path: output_${{ matrix.python-version }}.txt
+          path: path/to/artifact/world.txt
           python-version: ${{ matrix.python-version }}
       - name: Display Python version
         run: python -c "import sys; print(sys.version)"
